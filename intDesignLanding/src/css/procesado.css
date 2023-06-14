@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: 'Ubuntu', sans-serif; }
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem 0 0; }
+  .header .logoyname {
+    display: flex;
+    align-items: center; }
+  .header .companyName {
+    font-family: 'Bebas Neue', sans-serif; }
+  .header .logo {
+    height: 70px;
+    filter: brightness(150) grayscale(6) contrast(100); }
+
+.hero {
+  height: calc(100vh - 190px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem; }
+  .hero .texto {
+    padding: 4rem 0 2rem 0; }
+
+.gradient {
+  background: #0F2027;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #2C5364, #203A43, #0F2027);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+
+.wave {
+  aspect-ratio: 900/600;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("/wave-haikei.svg"); }
+
+.imgBeforAfter {
+  display: grid;
+  place-items: center;
+  margin: 0 0 3rem 0; }
+  .imgBeforAfter .small {
+    height: 200px; }
+  .imgBeforAfter .rotate {
+    transform: rotate(-10deg); }
+  .imgBeforAfter .bg {
+    box-shadow: 0 0 10px black; }
+  .imgBeforAfter .front {
+    z-index: 0; }
+  .imgBeforAfter .abs {
+    position: absolute; }
