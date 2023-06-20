@@ -7,3 +7,15 @@
     color: rgb(255, 255, 255);
     font-family: 'Ubuntu', sans-serif;
 }
+.button{
+    padding: 0.5rem 1rem;
+    color: black;
+    background-color: white;
+    border: solid black 1px;
+    border-radius: 3px;
+    &:hover{
+        cursor: pointer;
+        background-color: rgb(211, 211, 211);
+    }
+}
+

@@ -15,16 +15,19 @@ export default function Hero() {
         </div>
 
     <div className='imgBeforAfter'>
-       {/*  {
-        imgTop===0? */}
-            <img className={ imgTop===true?'rotate small bg front abs':'small'} src={imgBefore1} alt="" />
-       {/*  :   */}  
-            <img className={imgTop===false?'rotate small bg front abs':'small'} src={imgAfter1} alt="" />
-    {/*     } */}
+      <div className={imgTop===true?'all rotate small bg front abs':'all'}>
+        <p className='text'>Before</p>
+            <img className='small' src={imgBefore1} alt="" />
+      </div>
+      <div className={imgTop===false?'all rotate small bg front abs':'all'}>
+        <p className='text' >After</p>
+            <img className='small' src={imgAfter1} alt="" />
+      </div>
+      
     </div>
 
 
-    <button className='button' onClick={onclick}>{imgTop===true? 'After':'Before'}</button>
+    <button className='button' onClick={onclick}>{imgTop===true? 'See after':'See before'}</button>
 
     </div>
   )

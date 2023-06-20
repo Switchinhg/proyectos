@@ -45,9 +45,15 @@
 .imgBeforAfter{
     display: grid;
     place-items: center;
+
     margin: 0 0 3rem 0;
+    .all{
+        display: flex;
+        justify-content: center;
+    }
     .small{
-        height: 200px;
+        height: 50vw;
+        max-height: 400px;
     }
     .rotate{
         transform: rotate(-10deg);
@@ -56,9 +62,19 @@
         box-shadow: 0 0 10px black;
     }
     .front{
-        z-index: 0;
+        z-index: 1;
     }
     .abs{
+        position: absolute;
+    }
+    .text{
+        color: white;
+        text-shadow:
+        -1px 1px 5px black,
+        1px -1px 10px black,
+        1px 1px 5px black,
+        -1px -1px 10px black,
+        ;
         position: absolute;
     }
 
