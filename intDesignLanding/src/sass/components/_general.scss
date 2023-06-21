@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@font-face {
+    font-family: objectSans;
+    src: url(/ObjectSans-Regular.otf);
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'objectSans', sans-serif;
 }
 .button{
     padding: 0.5rem 1rem;
@@ -20,4 +24,8 @@
 
 .white{
     color:white;
+}
+.position{
+    position: relative;
+    z-index: -1;
 }

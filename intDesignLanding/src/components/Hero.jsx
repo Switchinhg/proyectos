@@ -1,6 +1,6 @@
 
-import imgBefore1 from '../assets/before.webp'
-import imgAfter1 from '../assets/after.webp'
+import imgBefore1 from '/before.webp'
+import imgAfter1 from '/after.webp'
 import { useState } from 'react'
 export default function Hero() {
     const [imgTop,setImgTop] = useState(true)
