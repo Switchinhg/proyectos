@@ -4,7 +4,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: white;
   font-family: 'Ubuntu', sans-serif; }
 
 .button {
@@ -17,6 +16,9 @@
     cursor: pointer;
     background-color: lightgray; }
 
+.white {
+  color: white; }
+
 .header {
   display: flex;
   align-items: center;
@@ -26,7 +28,8 @@
     display: flex;
     align-items: center; }
   .header .companyName {
-    font-family: 'Bebas Neue', sans-serif; }
+    font-family: 'Bebas Neue', sans-serif;
+    color: white; }
   .header .logo {
     height: 70px;
     filter: brightness(150) grayscale(6) contrast(100); }
@@ -47,13 +50,6 @@
   /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to bottom, #2C5364, #203A43, #0F2027);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
-
-.wave {
-  aspect-ratio: 900/600;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-image: url("/wave-haikei.svg"); }
 
 .imgBeforAfter {
   display: grid;
@@ -77,3 +73,16 @@
     color: white;
     text-shadow: -1px 1px 5px black, 1px -1px 10px black, 1px 1px 5px black, -1px -1px 10px black;
     position: absolute; }
+
+.interiorShowing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: -5rem; }
+  .interiorShowing img {
+    width: 90vw;
+    max-width: 800px;
+    border-radius: 30px; }
+  .interiorShowing .textos {
+    padding: 1rem; }

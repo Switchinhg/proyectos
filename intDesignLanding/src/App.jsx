@@ -1,4 +1,5 @@
 import GradientHero from "./components/GradientHero"
+import SeccionShowing from "./components/SeccionShowing"
 
 
 function App() {
@@ -6,7 +7,7 @@ function App() {
   return (
     <>
     <GradientHero/>
-
+    <SeccionShowing />
     </>
 
   )

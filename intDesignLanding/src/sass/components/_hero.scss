@@ -9,6 +9,7 @@
     }
     .companyName{
         font-family: 'Bebas Neue', sans-serif;
+         color:white;
     }
 
     .logo{
@@ -34,14 +35,7 @@
     background: linear-gradient(to bottom, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
-.wave{
-    aspect-ratio: 900/600;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-image: url('/wave-haikei.svg');
 
-}
 .imgBeforAfter{
     display: grid;
     place-items: center;

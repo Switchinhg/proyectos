@@ -10,7 +10,7 @@ export default function Hero() {
     }
   return (
     <div className="hero">
-        <div className='texto'>
+        <div className='texto white'>
             <p>Transformamos espacios con elegancia</p>
         </div>
 
