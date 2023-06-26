@@ -39,6 +39,8 @@ export default function SeccionShowing() {
               </li>
             </ul>
 
+            <button className='button'>Contact us!</button>
+
     </div>
   )
 }
