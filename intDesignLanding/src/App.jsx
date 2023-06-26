@@ -1,3 +1,4 @@
+import Footer from "./components/Footer"
 import GradientHero from "./components/GradientHero"
 import SeccionShowing from "./components/SeccionShowing"
 
@@ -8,6 +9,9 @@ function App() {
     <>
     <GradientHero/>
     <SeccionShowing />
+    
+
+    <Footer />
     </>
 
   )

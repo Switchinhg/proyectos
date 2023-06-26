@@ -1,0 +1,50 @@
+.position{
+    rotate: 180deg;
+    position: relative;
+    top: 20px;
+    
+}
+.actualFooter{
+    padding:1rem ;
+    color: white;
+    background: linear-gradient(to top, #2C5364, #203A43, #0F2027);
+    .business{
+        
+        .separador{
+            display: flex;
+            align-items: center;
+            img{
+                height: 70px;
+                filter:  brightness(150) grayscale(6) contrast(100);
+
+            }
+    
+        }
+    }
+    .dots{
+        padding: 2rem 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+
+        .insideDot{
+            padding: .2rem;
+            display: flex;
+            gap: 1rem;
+        }
+
+        ul{
+            list-style-type: none;
+            padding: 1rem 0;
+            li{
+                padding: 0 0 .2rem 1rem;
+            }
+        }
+        .title{
+            font-weight: bold;
+            font-size: 17px;
+        }
+    }
+}
