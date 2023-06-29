@@ -27,6 +27,9 @@
   position: relative;
   z-index: -1; }
 
+.title, .undertitle {
+  text-align: center; }
+
 .header {
   display: flex;
   align-items: center;
@@ -122,6 +125,41 @@
     .interiorShowing .info .infotext {
       font-size: small; }
 
+.social {
+  padding: 3rem 1rem; }
+  .social .images {
+    margin: 2rem 0; }
+  .social img {
+    width: 100%;
+    margin: 1rem 0;
+    border-radius: 15px; }
+
+.reviews {
+  margin: 2rem 0; }
+  .reviews .container {
+    display: flex;
+    overflow-x: scroll;
+    padding: 1rem;
+    margin-top: 1rem; }
+    .reviews .container .stars {
+      display: flex;
+      gap: .5rem; }
+    .reviews .container .review {
+      margin-right: 1rem;
+      min-width: 320px;
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      background-color: #94C2DB;
+      border-radius: 15px; }
+    .reviews .container .text {
+      padding: 1rem 0;
+      font-size: 14px;
+      flex-grow: 1; }
+    .reviews .container .reviewer {
+      font-size: 10px; }
+
 .footer .position {
   transform: rotate(180deg);
   position: relative;
@@ -157,31 +195,3 @@
     .actualFooter .dots .title {
       font-weight: bold;
       font-size: 17px; }
-
-.reviews {
-  margin: 2rem 0; }
-  .reviews .title, .reviews .undertitle {
-    text-align: center; }
-  .reviews .container {
-    display: flex;
-    overflow-x: scroll;
-    padding: 1rem;
-    margin-top: 1rem; }
-    .reviews .container .stars {
-      display: flex;
-      gap: .5rem; }
-    .reviews .container .review {
-      margin-right: 1rem;
-      min-width: 320px;
-      padding: 1rem;
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      background-color: #94C2DB;
-      border-radius: 15px; }
-    .reviews .container .text {
-      padding: 1rem 0;
-      font-size: 14px;
-      flex-grow: 1; }
-    .reviews .container .reviewer {
-      font-size: 10px; }
