@@ -1,0 +1,18 @@
+/* Normalize */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+:root{
+    --background_color_body:#f8f8f8;
+}
+
+body{
+    background-color: var(--background_color_body);
+}
+
+.darkmode{
+    --background_color_body:rgb(32, 32, 32);
+}
