@@ -1,11 +1,32 @@
 
+.we_offer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
 .weoffer_grid{
     display: grid;
-    grid-template-columns: 400px 400px 400px;
-    grid-template-rows: 400px 400px 400px; 
-    column-gap: 10px;
-    row-gap: 15px;
+    grid-template-columns: 350px 350px 350px;
+    grid-template-rows: 250px 250px ; 
+    column-gap: 40px;
+    row-gap: 40px;
 }
 .weoffer_grid_card{
-    background-color: red;
+    border: solid 1px var(--border_color);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.weoffer_card_title{
+    font-size: 22px;
+    border-bottom: solid 1px var(--border_color);
+    padding-bottom: 10px;
+}
+.weoffer_card_text{
+    text-align: center;
+    width: 217px;
 }
