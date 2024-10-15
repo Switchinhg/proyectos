@@ -3,16 +3,27 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    border-bottom: solid var(--border_color) 1px;
+    
 }
 .nav_content{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 1400px;
-    background-color: red;
+    width: 1500px;
+    /* background-color: red; */
     height: 100px;
     padding: 0 20px ;
 }
 .nav_icon{
     display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.nav_icon img{
+    width: 60px;
+    height: 50px;
+}
+.nav_icon h2{
+    font-size: 26px;
 }

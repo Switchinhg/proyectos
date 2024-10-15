@@ -1,0 +1,11 @@
+
+.weoffer_grid{
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: 400px 400px 400px; 
+    column-gap: 10px;
+    row-gap: 15px;
+}
+.weoffer_grid_card{
+    background-color: red;
+}

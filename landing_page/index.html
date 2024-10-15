@@ -7,25 +7,98 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/navbar.css">
-    <title>Codeflux Page</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/hero.css">
+    <link rel="stylesheet" href="./css/trustedby.css">
+    <link rel="stylesheet" href="./css/about_us.css">
+    <link rel="stylesheet" href="./css/weoffer.css">
+
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  
+
+    <!-- JS -->
+    <script src="./js/app.js" defer></script>
+
+    <!-- Title -->
+    <title>Codeflux - Santiago Font</title>
+
+    <!-- PostHog -->
+    <script>
+        !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey getNextSurveyStep identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+            posthog.init('phc_KEUWpUwpCI7GQdbGDhAX4DTPjBGrWJqVWBZlRfYFpRe',{api_host:'https://us.i.posthog.com', person_profiles: 'always' // or 'always' to create profiles for anonymous users as well
+        })
+    </script>
 </head>
-<body class="darkmode">
+<body>
     <!-- NavBar -->
     <nav class="nav_base">
         <div class="nav_content">
             <div class="nav_icon">
-                <img src="" alt="">
-                <h1>CodeFlux</h1>
+                <img src="./imgs/logo.png" alt="">
+                <h2>CodeFlux</h2>
             </div>
-            <div class="nav_action">
-                H=OLA
-            </div>
+            <button class="primary_button" id="BtnClick">
+                Get Started
+            </button>
         </div>
     </nav>
     
     <!-- Page Content -->
-    <div class="container">
-        
+    <div class="container_wrap">
+        <div class="container"> 
+            <section class="hero">
+                <h1>Your Vision, Our Expertise, Excellent results</h1>
+                <div class="hero_subtext">
+                    <p>Crafting bespoke websites and digital experiences </p>
+                    <p>that grow with your business.</p>
+                </div>
+                <div class="hero_action">
+                    <button class="primary_button"> Get Started Today</button>
+                    <a href="#about_us">about us</a>
+                </div>
+            </section>
+        </div>
+            <section class="trustedby">
+                <p>Trusted by many</p>
+                <div class="swiper swiper_trusted">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="./imgs/VICI Properties Inc..png" alt=""></div>
+                      <div class="swiper-slide"><img src="./imgs/Oracle Corporation.png" alt=""></div>
+                      <div class="swiper-slide"><img src="./imgs/Generac Holdings Inc..png" alt=""></div>
+                      <div class="swiper-slide"><img src="./imgs/Advanced Micro Devices, Inc..png" alt=""></div>
+                      <div class="swiper-slide"><img src="./imgs/Avery Dennison Corporation.png" alt=""></div>
+                      <div class="swiper-slide"><img src="./imgs/Domino’s Pizza Inc.png" alt=""></div>
+                      <div class="swiper-slide"><img src="./imgs/Sysco Corporation.png" alt=""></div>
+                      <div class="swiper-slide"><img src="./imgs/Waters Corporation.png" alt=""></div>
+                      <div class="swiper-slide"><img src="./imgs/Visa Inc..png" alt=""></div>
+                    </div>
+                  </div>
+            </section>
+        <div class="container container_bottom">
+            <section class="about_us">
+                <p class="section_title">About Us</p>
+                <p class="">A Passion for Web Development</p>
+                <p class="">At Codeflux, we bring your ideas to life with beautifully designed, high-performance websites. From small businesses to large enterprises, our goal is to make the web work for you.</p>
+            </section>
+            <section class="we_offer">
+                <p class="section_title">What We Offer</p>
+                <div class="weoffer_grid">
+                    <div class="weoffer_grid_card">
+                        <p class="section_title">Custom Website Development</p>
+                        <p>Tailored designs and development built to suit your brand.</p>
+                    </div>
+                    <div class="weoffer_grid_card">HOLA</div>
+                    <div class="weoffer_grid_card">HOLA</div>
+                    <div class="weoffer_grid_card">HOLA</div>
+                    <div class="weoffer_grid_card">HOLA</div>
+                    <div class="weoffer_grid_card">HOLA</div>
+                </div>
+            </section>
+            <section class="our_work">
+
+            </section>
+        </div>
     </div>
 
     <!-- Footer -->
@@ -34,4 +107,5 @@
     </footer>
     
 </body>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </html>
