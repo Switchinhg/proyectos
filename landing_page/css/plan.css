@@ -1,2 +1,74 @@
+.roadmap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .plan{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.bar{
+    /* background-color: var(--background_color_body); */
+    /* border: solid 1px rgb(24, 88, 107); */
+    box-shadow: 0 0 2px rgba(24, 88, 107, 0.514);
+    width: 5px;
+    height: 915px;
+    z-index: -10;
+    position: relative;
+    left: 25px;
+    top: -101px;
+}
+.filled{
+    background-color: rgb(24, 88, 107);
+    width: 100%;
+    height: 10%;
+    transition: height 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.steps{
+    width: 650px;
+}
+.step{
+    height: 296px;
+}
+.step_numberInfo{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--background_color_body);
+    padding: 10px 0;
+    font-size: 25px;
+}
+.name{
+    font-size: 25px;
+}
+.step_text{
+    display: flex;
+    justify-content: end;
+}
+.step_text p{
+    font-size: 25px;
+    width: 450px;
+    padding: 50px 0 50px 50px;
+}
+.number{
+    padding: 5px 15px;
+    border-radius: 50%;
+    border: solid black 1px;
+}
+.number_filled{
+    border:solid 1px rgb(24, 88, 107) ;
+    background-color: rgba(24, 88, 107, 0.233);
+}
+
+
+.bar::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #3498db; /* Fill color */
+    transition: width 1s ease-in-out; /* Smooth fill animation */
 }
