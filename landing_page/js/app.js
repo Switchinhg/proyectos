@@ -30,6 +30,16 @@ var swiper = new Swiper(".swiper_trusted", {
       el: ".swiper-pagination",
     },
   });
+  var swiper = new Swiper(".swiper_reviews", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    autoplay: {
+        delay: 1000,
+        disableOnInteraction: false,
+    },
+    loop: true,
+    speed: 3000
+  });
 
 let bar = document.getElementById("bar")
 let filled = document.getElementById("filled")
