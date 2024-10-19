@@ -187,3 +187,26 @@ const checkEmailRegex = (email) =>{
     /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
   )
 }
+
+const faq = document.getElementsByClassName("faq")
+
+for (const el of faq) {
+  el.addEventListener("click", e =>{
+    console.log(el)
+    console.log( el.querySelector("p:last-child"))
+    el.querySelector("p:last-child").classList.toggle("p_active")
+    el.querySelector(".faq_question").classList.toggle("faq_question_active")
+
+    if(el.querySelector("#Path").classList.contains("faq_plus_active")){
+        el.querySelector("#Path").classList.add("faq_plus_deactive")
+        el.querySelector("#Path").classList.remove("faq_plus_active")
+      }else{
+        el.querySelector("#Path").classList.add("faq_plus_active")
+        el.querySelector("#Path").classList.remove("faq_plus_deactive")
+    }
+      // el.querySelector("#Path").classList.add("faq_plus_deactive")
+    // }else{
+
+    // }
+  })
+}
