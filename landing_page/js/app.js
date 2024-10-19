@@ -135,3 +135,55 @@ if (initialCenterBarIndex !== -1) {
     logicColor(initialCenterBarIndex)
 }
 
+
+let form_contact = document.getElementById("form_contact")
+
+form_contact.addEventListener("submit", e =>{
+  e.preventDefault()
+})
+let form_contact_button = document.getElementById("form_contact_button")
+
+form_contact_button.addEventListener("click", e =>{
+  let name = document.getElementById("name").value
+  let subject = document.getElementById("subject").value
+  let message = document.getElementById("message").value
+  let email = document.getElementById("email").value
+  
+  if(name && subject && message && checkEmailRegex(email)){
+
+    Toastify({
+      text: "Excellent! we'll be contacting you shortly!",
+      duration: 3000,
+      close: true,
+      gravity: "bottom", // `top` or `bottom`
+      position: "right", // `left`, `center` or `right`
+      stopOnFocus: true, // Prevents dismissing of toast on hover
+      style: {
+        background: "linear-gradient(to right, #00b09b, #96c93d)",
+      },
+      onClick: function(){} // Callback after click
+    }).showToast();
+
+  }else{
+
+    Toastify({
+      text: "All values are required!",
+      duration: 3000,
+      close: true,
+      gravity: "bottom", // `top` or `bottom`
+      position: "right", // `left`, `center` or `right`
+      stopOnFocus: true, // Prevents dismissing of toast on hover
+      style: {
+        background: "linear-gradient(to right, #fc3131, #fc9090)",
+      },
+      onClick: function(){} // Callback after click
+    }).showToast();
+  }
+  
+})
+
+const checkEmailRegex = (email) =>{
+  return email.match(
+    /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+  )
+}

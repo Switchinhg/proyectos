@@ -1,0 +1,26 @@
+.contact_us{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;   
+gap: 15px;
+}
+.contact_us form{
+    display: flex;
+    width: 900px;
+    flex-direction: column;
+}
+.contact_us input, .contact_us textarea{
+    padding: 0.5rem 1rem;
+    border: none;
+    border-bottom: solid 1px gray;
+    border-left: solid 1px gray;
+    border-right: solid 1px gray;
+    outline: none;
+}
+.contact_us input:nth-child(1){
+    border-top: solid 1px gray;
+}
+.contact_us textarea{
+    resize: none;
+}

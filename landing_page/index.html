@@ -16,11 +16,15 @@
     <link rel="stylesheet" href="./css/plan.css">
     <link rel="stylesheet" href="./css/reviews.css">
     <link rel="stylesheet" href="./css/pricing.css">
+    <link rel="stylesheet" href="./css/contact_us.css">
 
     <!-- Swiper -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
   
-
+    <!-- Toastify -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js" defer></script> 
     <!-- JS -->
     <script src="./js/app.js" defer></script>
 
@@ -63,6 +67,8 @@
                 </div>
             </section>
         </div>
+        
+        <!-- Trusted by many -->
             <section class="trustedby">
                 <p>Trusted by many</p>
                 <div class="swiper swiper_trusted">
@@ -80,11 +86,15 @@
                 </div>
             </section>
         <div class="container container_bottom">
+
+            <!-- A litter about us -->
             <section class="about_us">
                 <p class="section_title">About Us</p>
                 <p class="">A Passion for Web Development</p>
                 <p class="">At Codeflux, we bring your ideas to life with beautifully designed, high-performance websites. From small businesses to large enterprises, our goal is to make the web work for you.</p>
             </section>
+            
+            <!-- What we offer -->
             <section class="we_offer">
                 <p class="section_title">What We Offer</p>
                 <div class="weoffer_grid">
@@ -114,6 +124,8 @@
                     </div>
                 </div>
             </section>
+
+            <!-- Our work -->
             <section class="our_work">
                 <p class="section_title">Our work</p>
                 
@@ -131,6 +143,8 @@
                     </div>
                 </div>
             </section>
+
+            <!-- Plan of action -->
             <section class="plan">
                 <p class="section_title">Your Roadmap to Success in 4 Simple Steps</p>
                 <div class="roadmap">
@@ -175,6 +189,8 @@
                     </div>
                 </div>
             </section>
+
+            <!-- Reviews -->
             <section class="reviews">
                 <div class="swiper swiper_reviews">
                     <div class="swiper-wrapper">
@@ -210,6 +226,8 @@
                     </div>
                 </div>
             </section>
+
+            <!-- Pricing -->
             <section class="pricing">
                 <p class="section_title">Choose the Right Plan for Your Business</p>
                 <div class="prices">
@@ -290,6 +308,17 @@
                     </div>
                 </div>
             </section>
+            <!-- Contact US -->
+            <section class="contact_us">
+                <p class="section_title">Contact us</p>
+                <form action="" id="form_contact">
+                    <input type="text" name="name" id="name" placeholder="Name">
+                    <input type="email" name="email" id="email" placeholder="Email">
+                    <input type="text" name="subject" id="subject" placeholder="Subject">
+                    <textarea name="message" id="message" placeholder="Message" rows="15"></textarea>
+                </form>
+                <button class="primary_button" id="form_contact_button">Contact us!!</button>
+            </section>
         </div>
     </div>
 
@@ -299,5 +328,4 @@
     </footer>
     
 </body>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </html>
