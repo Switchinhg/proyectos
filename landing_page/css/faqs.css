@@ -67,3 +67,19 @@
     transform-origin: center;
     transition: transform 1s;
 }
+@media only screen and (max-width: 1000px) {
+    .faq_wrap{
+        flex-direction: column;
+    }
+    .faqs{
+        width: auto;
+    }
+}
+@media only screen and (max-width: 550px) {
+    .faq p:first-child{
+        font-size: 18px;
+    }
+    .faq p:last-child{
+        font-size: 12px;
+    }
+}

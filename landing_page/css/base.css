@@ -48,3 +48,19 @@ body{
     transition: box-shadow .1s;
     transform: translateY(2px);
 }
+
+@media only screen and (max-width: 1500px) {
+    .container{
+        width: 1000px;
+    }
+  }
+@media only screen and (max-width: 1000px) {
+    .container{
+        width: 550px;
+    }
+  }
+@media only screen and (max-width: 550px) {
+    .container{
+        width: 370px;
+    }
+  }

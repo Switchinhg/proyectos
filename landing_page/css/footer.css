@@ -20,16 +20,42 @@ footer{
     flex-wrap: wrap;
     gap: 20px;
     width: 1080px;
+    
 }
 .links_a_wrapper li{
     width: 200px;
     list-style-type: none;
+    text-align:center;
+
 }
 .links_a_wrapper a{
     text-decoration: none;
     color: rgb(48, 52, 255);
+    text-align:center;
+
 }
 .made_by{
     text-align: center;
     margin-top: 40px;
+}
+
+@media only screen and (max-width: 1130px) {
+    .links_a_wrapper, .links h5{
+        width: 860px;
+    }
+}
+@media only screen and (max-width: 920px) {
+    .links_a_wrapper, .links h5{
+        width: 640px;
+    }
+}
+@media only screen and (max-width: 680px) {
+    .links_a_wrapper, .links h5{
+        width: 420px;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .links_a_wrapper, .links h5{
+        width: 110px;
+    }
 }

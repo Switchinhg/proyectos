@@ -72,3 +72,29 @@
     background-color: #3498db; /* Fill color */
     transition: width 1s ease-in-out; /* Smooth fill animation */
 }
+
+
+@media only screen and (max-width: 1000px) {
+    .step{
+        z-index: 0;
+        position: relative;
+
+    }
+}
+@media only screen and (max-width: 580px) {
+   .plan .section_title{
+        width: 371px;
+        text-align: center;
+   }
+   .plan {
+        align-items: center;
+   }
+   .steps{
+    width: auto;
+   }
+   .step_text p{
+    font-size: 20px;
+    width: 350px;
+    padding: 50px 0 50px 50px;
+}
+}

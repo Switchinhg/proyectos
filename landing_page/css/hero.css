@@ -31,3 +31,22 @@
 .swiper-slide{
     height: 200px;
 }
+
+@media only screen and (max-width: 920px) {
+    .hero h1{
+        font-size: 30px;
+    }
+    .hero_subtext p{
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    .hero h1{
+        width: 400px;
+        text-align: center;
+    }
+    .hero_subtext p{
+        font-size: 12px;
+    }
+}

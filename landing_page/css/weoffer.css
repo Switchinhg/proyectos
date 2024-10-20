@@ -30,3 +30,15 @@
     text-align: center;
     width: 217px;
 }
+@media only screen and (max-width: 1140px) {
+    .weoffer_grid{
+        display: grid;
+        grid-template-columns: 350px 350px ;
+    }
+}
+@media only screen and (max-width: 780px) {
+    .weoffer_grid{
+        display: grid;
+        grid-template-columns: 350px  ;
+    }
+}

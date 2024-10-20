@@ -24,6 +24,7 @@
     /* background-color: red !important; */
     display: flex;
     align-items: center;    
+    justify-content: center;
     object-fit: cover;
 }
 .swiper_trusted img{

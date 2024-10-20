@@ -4,14 +4,39 @@ document.getElementById("BtnClick").addEventListener("click",e =>{
 
 
 var swiper = new Swiper(".swiper_trusted", {
-    slidesPerView: 5,
     spaceBetween: 30,
     autoplay: {
         delay: 1000,
         disableOnInteraction: false,
     },
     loop: true,
-    speed: 3000
+    speed: 3000,
+    breakpoints: {
+      // when window width is >= 320px
+      600: {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        
+      },
+      // when window width is >= 480px
+      877: {
+        slidesPerView: 2,
+        spaceBetween: 30
+      },
+      // when window width is >= 640px
+      1100: {
+        slidesPerView: 3,
+        spaceBetween: 40
+      },
+      1300:{
+        slidesPerView: 4,
+        spaceBetween: 40
+      },
+      1500: {
+        slidesPerView: 5,
+        spaceBetween: 40
+      }
+    }
   });
 
   var swiper = new Swiper(".swiper_ourwork", {
@@ -38,7 +63,25 @@ var swiper = new Swiper(".swiper_trusted", {
         disableOnInteraction: false,
     },
     loop: true,
-    speed: 3000
+    speed: 3000,
+    breakpoints: {
+      // when window width is >= 320px
+      100: {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        
+      },
+      // when window width is >= 480px
+      877: {
+        slidesPerView: 2,
+        spaceBetween: 30
+      },
+
+      1500: {
+        slidesPerView: 3,
+        spaceBetween: 40
+      }
+    }
   });
 
 let bar = document.getElementById("bar")
