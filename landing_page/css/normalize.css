@@ -11,4 +11,6 @@
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
+    scroll-behavior: smooth;
+    scroll-padding: 100px;
 }
