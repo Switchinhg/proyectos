@@ -1,5 +1,5 @@
 .swiper_reviews .swiper-slide{
-    border: solid black 1px ;
+    border: solid var(--border_color) 1px ;
     padding: 30px;
     display: flex;
     flex-direction: column;

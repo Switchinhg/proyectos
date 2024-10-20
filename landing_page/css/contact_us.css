@@ -13,13 +13,13 @@ gap: 15px;
 .contact_us input, .contact_us textarea{
     padding: 0.5rem 1rem;
     border: none;
-    border-bottom: solid 1px gray;
-    border-left: solid 1px gray;
-    border-right: solid 1px gray;
+    border-bottom: solid 1px var(--border_color);
+    border-left: solid 1px var(--border_color);
+    border-right: solid 1px var(--border_color);
     outline: none;
 }
 .contact_us input:nth-child(1){
-    border-top: solid 1px gray;
+    border-top: solid 1px var(--border_color);
 }
 .contact_us textarea{
     resize: none;
